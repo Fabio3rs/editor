@@ -25,6 +25,9 @@ void print_loc(int x, int y) {
 #endif
 }
 
+/*
+* @brief for testing with https://github.com/Fabio3rs/my-cpp-repl-study
+*/
 auto extExecRepl(std::string_view lineview) -> bool;
 
 void innerLoop(PAGE &page, int &beg, int &end, int &y, int &x, int &i,
