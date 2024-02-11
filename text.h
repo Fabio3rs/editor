@@ -10,7 +10,7 @@
 #include "page.h"
 #include "prompt.h"
 
-void update_status(char *info);
+void update_status(const char *info);
 
 int count_lines(FILE *fp);
 void load_file(PAGE *p, char* filename);
