@@ -64,7 +64,7 @@ void remove_line(PAGE *p, int index)
 void expand_page(PAGE *p)
 {
 	int newsize = p->size * 2;
-	LINE *newline = malloc(newsize * sizeof(LINE));
+	LINE *newline = (LINE *)malloc(newsize * sizeof(LINE));
 	
 	int i;
 	for(i = 0; i < p->size; i++) // copy old lines
